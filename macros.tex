@@ -1,0 +1,30 @@
+
+%\usepackage{amsmath,amssymb}
+
+%\usepackage{graphicx}
+\usepackage{pgfplots}
+%\usepackage{graphics}
+%\usepackage{placeins}
+%\usepackage{kpfonts}
+
+\newcommand{\ignore}[1]{}
+
+\newcommand{\dil}[1]{\notethis{green}{Dilian}{#1}}
+\newcommand{\kla}[1]{\notethis{blue}{Klaus}{#1}}
+\newcommand{\mar}[1]{\notethis{red}{Marieke}{#1}}
+\newcommand{\ros}[1]{\notethis{orange}{Rosemary}{#1}}
+
+\newcommand{\notethis}[3]{
+  \color{#1}
+  \vspace{0.3cm}
+  \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}\\
+  {\sc #2 - } #3\\
+  \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}\\
+  \vspace{0.3cm}
+  \color{black}
+}
+
+\newcommand{\red}[1]{{\color{red} #1}}
+\newcommand{\green}[1]{{\color{green} #1}}
+\newcommand{\blue}[1]{{\color{blue} #1}}
+\newcommand{\orange}[1]{{\color{orange} #1}}
