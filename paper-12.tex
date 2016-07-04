@@ -3,8 +3,17 @@
 % paper # 12
 % -----------------------------------
 
-Azzopardi, Colombo and Pace
-\cite{isola-2016-azzopardi}
-({\em A Model-Based Approach to Combining Static
-and Dynamic Verification Techniques}) 
-present ...
+Azzopardi, Colombo and Pace \cite{isola-2016-azzopardi} ({\em A
+Model-Based Approach to Combining Static and Dynamic Verification
+Techniques}) present how static and dynamic analysis can be used to
+ensure safety of systems that are to be used in an unknown
+context. The system developer has to provide a model of the
+system. This model then is used to find the appropriate context for the
+system to work in, and an attempt is made to statically verify the
+desired properties of the composed system. Any property (or part of a property)
+that cannot be verified statically will be verified
+dynamically. Moreover, it will also be verified dynamically whether
+the concrete implementation of the system respects the
+model. In some cases, knowledge about the properties that
+will be monitored can be used to reduce the model. The paper discusses
+a concrete example of this approach for an online payment ecosystem.
