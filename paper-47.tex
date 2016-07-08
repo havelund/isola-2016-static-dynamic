@@ -6,4 +6,11 @@
 Bodden, Pun, Steffen, Stolz and Wickert
 \cite{isola-2016-bodden}
 ({\em Information flow analysis for Go})
-present ...
+present parts of the theory and implementation of 
+an information flow analysis of Go programs. The purpose is
+to detect the flow of so-called tainted values, from untrusted sources (such as reading from input) to so-called sinks, 
+which represent locations where such untrusted data should not end up.  Go allows for concurrent programming via channels, requiring
+special techniques. It is discussed how dynamic analysis can be
+applied, in addition to the  static analysis, to monitor execution paths, that due to the conservative static analysis cannot be determined safe. An option is to stop the execution ofthe program when a tainted datum is about to reach a sink.
+A dynamic coverage tool can also provide information
+as to how many of these potentially unsafe paths have been executed and verified.
