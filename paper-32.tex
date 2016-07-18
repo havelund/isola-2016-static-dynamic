@@ -6,8 +6,8 @@
 Eilertsen, Bagge, and Stolz
 \cite{isola-2016-eilertsen}
 ({\em Safer Refactorings})
-present a method to avoid that refactorings can change the behavior
+present a method to avoid refactorings changing the behavior
 of a program. 
 Refactorings are a way to restructure a program's code. If a
 refactoring is wrongly applied, this might actually change the
-behavior of the program, which should be avoided. Eilertsen et al. propose a technique to identify when the program's behavior is actually changed. For two concrete refactorings (extract local variable, and extract and move method) they describe how this is done. Essentially, together with the refactoring they generate an assertion which will fail if the refactoring changed the program behavior. To validate their approach, they automatically applied these refactorings on a large code base, and then used unit tests to identify how many assertions actually fail.
+behavior of the program, which should be avoided. Eilertsen et al. propose a technique to identify when the program's behavior is actually changed. For two concrete refactorings (extract local variable, and extract and move method) they describe how this is done. Essentially, together with the refactoring they generate an assertion which will fail if the refactoring changed the program behavior. To validate their approach, they automatically apply these refactorings on a large code base, and use unit tests to identify how many assertions actually fail.

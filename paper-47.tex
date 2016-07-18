@@ -10,7 +10,8 @@ present parts of the theory and implementation of
 an information flow analysis of Go programs. The purpose is
 to detect the flow of so-called tainted values, from untrusted sources (such as reading from input) to so-called sinks, 
 which represent locations where such untrusted data should not end up.  Go allows for concurrent programming via channels, requiring
-special techniques. It is discussed how runtime verification can be
-applied, in addition to the  static verification, to monitor execution paths, that due to the conservative static verification cannot be determined safe. An option is to stop the execution ofthe program when a tainted datum is about to reach a sink.
+special techniques. Discussions include how dynamic analysis can be
+applied, to monitor execution paths, that cannot be determined safe due to the conservative static analysis. An option is to stop the execution of
+the program when a tainted datum is about to reach a sink.
 A dynamic coverage tool can also provide information
 as to how many of these potentially unsafe paths have been executed and verified.
